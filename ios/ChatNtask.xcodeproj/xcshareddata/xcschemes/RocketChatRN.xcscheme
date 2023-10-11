@@ -30,8 +30,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
                BuildableName = "Rocket.Chat Experimental.app"
-               BlueprintName = "RocketChatRN"
-               ReferencedContainer = "container:RocketChatRN.xcodeproj">
+               BlueprintName = "ChatNtask"
+               ReferencedContainer = "container:ChatNtask.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -45,7 +45,7 @@
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
                BuildableName = "RocketChatRNTests.xctest"
                BlueprintName = "RocketChatRNTests"
-               ReferencedContainer = "container:RocketChatRN.xcodeproj">
+               ReferencedContainer = "container:ChatNtask.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -60,8 +60,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
             BuildableName = "Rocket.Chat Experimental.app"
-            BlueprintName = "RocketChatRN"
-            ReferencedContainer = "container:RocketChatRN.xcodeproj">
+            BlueprintName = "ChatNtask"
+            ReferencedContainer = "container:ChatNtask.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <Testables>
@@ -72,7 +72,7 @@
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
                BuildableName = "RocketChatRNTests.xctest"
                BlueprintName = "RocketChatRNTests"
-               ReferencedContainer = "container:RocketChatRN.xcodeproj">
+               ReferencedContainer = "container:ChatNtask.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -93,8 +93,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
             BuildableName = "Rocket.Chat Experimental.app"
-            BlueprintName = "RocketChatRN"
-            ReferencedContainer = "container:RocketChatRN.xcodeproj">
+            BlueprintName = "ChatNtask"
+            ReferencedContainer = "container:ChatNtask.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <CommandLineArguments>
@@ -127,8 +127,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
             BuildableName = "Rocket.Chat Experimental.app"
-            BlueprintName = "RocketChatRN"
-            ReferencedContainer = "container:RocketChatRN.xcodeproj">
+            BlueprintName = "ChatNtask"
+            ReferencedContainer = "container:ChatNtask.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

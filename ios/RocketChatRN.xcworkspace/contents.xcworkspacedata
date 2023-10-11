@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:RocketChatRN.xcodeproj">
+      location = "group:/Users/joaoscarpa/_projects/chat-ntask-app-mobile/ios/ChatNtask.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
