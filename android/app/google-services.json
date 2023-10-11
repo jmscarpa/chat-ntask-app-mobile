@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "924971043973",
+    "project_id": "chat-ntask-dev",
+    "storage_bucket": "chat-ntask-dev.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:924971043973:android:79a5e4b0c292dcbe816dec",
+        "android_client_info": {
+          "package_name": "chatntask.jmscarpa.com.br"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBn0rOSevAMC2-0QQRcwuREyV9JQc7PMTk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
