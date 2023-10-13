@@ -122,5 +122,11 @@ export default StyleSheet.create({
 	},
 	inputLastChild: {
 		marginBottom: 15
+	},
+	loginLogo: {
+		width: 110,
+		height: 50,
+		marginBottom: 16,
+		resizeMode: 'contain'
 	}
 });

@@ -76,7 +76,7 @@ class LoginView extends React.Component<ILoginViewProps, ILoginViewState> {
 	private passwordInput: RNTextInput | null | undefined;
 
 	static navigationOptions = ({ route, navigation }: ILoginViewProps) => ({
-		title: route?.params?.title ?? 'Rocket.Chat',
+		title: route?.params?.title ?? 'Chat Ntask',
 		headerRight: () => <HeaderButton.Legal testID='login-view-more' navigation={navigation} />
 	});
 
@@ -209,25 +209,7 @@ class LoginView extends React.Component<ILoginViewProps, ILoginViewState> {
 						fontSize={14}
 					/>
 				)}
-				{this.showRegistrationButton ? (
-					<View style={styles.bottomContainer}>
-						<Text style={[styles.bottomContainerText, { color: themes[theme].auxiliaryText }]}>
-							{I18n.t('Dont_Have_An_Account')}
-						</Text>
-						<Text
-							style={[styles.bottomContainerTextBold, { color: themes[theme].actionTintColor }]}
-							onPress={this.register}
-							testID='login-view-register'
-						>
-							{I18n.t('Create_account')}
-						</Text>
-					</View>
-				) : (
-					<Text style={[styles.registerDisabled, { color: themes[theme].auxiliaryText }]}>
-						{Accounts_RegistrationForm_LinkReplacementText}
-					</Text>
-				)}
-				<UGCRules styleContainer={styles.ugcContainer} />
+				{/* <UGCRules styleContainer={styles.ugcContainer} /> */}
 			</>
 		);
 	};
