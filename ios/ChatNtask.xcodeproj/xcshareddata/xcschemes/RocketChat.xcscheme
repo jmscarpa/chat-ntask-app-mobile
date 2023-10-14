@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "7AAB3E0D257E6A6E00707CF6"
-               BuildableName = "Rocket.Chat.app"
-               BlueprintName = "Rocket.Chat"
+               BuildableName = "ChatNtask".app"
+               BlueprintName = "Chat Ntask"
                ReferencedContainer = "container:ChatNtask.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -46,7 +46,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7AAB3E0D257E6A6E00707CF6"
             BuildableName = "Rocket.Chat.app"
-            BlueprintName = "Rocket.Chat"
+            BlueprintName = "Chat Ntask"
             ReferencedContainer = "container:ChatNtask.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -63,7 +63,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7AAB3E0D257E6A6E00707CF6"
             BuildableName = "Rocket.Chat.app"
-            BlueprintName = "Rocket.Chat"
+            BlueprintName = "Chat Ntask"
             ReferencedContainer = "container:ChatNtask.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

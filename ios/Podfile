@@ -38,7 +38,7 @@ abstract_target 'defaults' do
   all_pods
 
   target 'ChatNtask' # Experimental app
-  target 'Rocket.Chat' # Official app
+  target 'Chat Ntask' # Official app
   target 'ShareChatNtask'
   target 'NotificationService'
 end
