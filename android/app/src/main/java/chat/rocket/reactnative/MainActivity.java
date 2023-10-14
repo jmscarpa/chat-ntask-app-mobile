@@ -31,7 +31,7 @@ public class MainActivity extends ReactActivity {
     */
     @Override
     protected String getMainComponentName() {
-        return "RocketChatRN";
+        return "ChatNtask";
     }
 
     // from react-native-orientation

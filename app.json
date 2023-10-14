@@ -1,8 +1,8 @@
 {
-	"name": "RocketChatRN",
-	"share": "ShareRocketChatRN",
-	"displayName": "RocketChatRN",
+	"name": "ChatNtask",
+	"share": "ShareChatNtask",
+	"displayName": "ChatNtask",
 	"server": "https://chat.ntask.app",
-	"appGroup": "group.ios.chat.ntask",
+	"appGroup": "group.chatntask.jmscarpa.com.br",
 	"appStoreID": "6469017133"
 }
