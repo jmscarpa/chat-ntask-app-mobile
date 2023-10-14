@@ -1,6 +1,5 @@
 defaults: &defaults
   working_directory: ~/repo
-
 orbs:
   android: circleci/android@2.1.2
 
