@@ -84,7 +84,7 @@ workflows:
       - name: Build Android release
         script: |
           export LATEST_GOOGLE_PLAY_BUILD_NUMBER=$(($(google-play get-latest-build-number --package-name "$PACKAGE_NAME") + 1))
-          cd android && ./gradlew app:assembleE2ePlayRelease
+          cd android && ./gradlew assembleRelease
     artifacts:
       - android/app/build/outputs/**/*.apk
       - android/app/build/outputs/**/*.aab

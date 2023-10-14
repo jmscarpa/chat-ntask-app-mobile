@@ -249,6 +249,7 @@ android {
     buildTypes {
         release {
             minifyEnabled enableProguardInReleaseBuilds
+            crunchPngs false
             setProguardFiles([getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'])
             proguardFile "${rootProject.projectDir}/../node_modules/detox/android/detox/proguard-rules-app.pro"
             signingConfig signingConfigs.release
