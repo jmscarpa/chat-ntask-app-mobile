@@ -3,10 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>com.apple.security.application-groups</key>
-	<array/>
+	<array>
+		<string>group.ios.chatntask.jmscarpa.com.br</string>
+	</array>
 	<key>keychain-access-groups</key>
 	<array>
-		<string>$(AppIdentifierPrefix)chatntask.jmscarpa.com.br.</string>
+		<string>$(AppIdentifierPrefix)chatntask.jmscarpa.com.br</string>
 	</array>
 </dict>
 </plist>
