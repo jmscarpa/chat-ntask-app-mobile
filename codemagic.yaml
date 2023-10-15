@@ -97,7 +97,7 @@ workflows:
         - appstore_credentials
       vars:
         XCODE_WORKSPACE: 'ChatNtask.xcworkspace'
-        XCODE_SCHEME: 'ChatNtask'
+        XCODE_SCHEME: 'Chat Ntask'
         BUNDLE_ID: 'chatntask.jmscarpa.com.br'
         APP_STORE_APP_ID: 6444013119
       node: 16.18.0
@@ -167,7 +167,7 @@ workflows:
         - appstore_credentials
       vars:
         XCODE_WORKSPACE: 'ChatNtask.xcworkspace'
-        XCODE_SCHEME: 'ChatNtask'
+        XCODE_SCHEME: 'Chat Ntask'
         BUNDLE_ID: 'chatntask.jmscarpa.com.br'
         APP_STORE_APP_ID: 6444013119
       node: 16.18.0
