@@ -145,9 +145,9 @@
 		7AE10C0828A59530003593CB /* Inter.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7AE10C0528A59530003593CB /* Inter.ttf */; };
 		85160EB6C143E0493FE5F014 /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194D9A8897F4A486C2C6F89A /* ExpoModulesProvider.swift */; };
 		8D99D8B9CB54A63C86435E41 /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2436B5359F3FC65800BCA854 /* ExpoModulesProvider.swift */; };
-		9C6A2011983C0EB1E0BFDF8C /* libPods-defaults-Rocket.Chat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F4094FC013D693914C83D9F9 /* libPods-defaults-Rocket.Chat.a */; };
-		BC404914E86821389EEB543D /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391C4F7AA7023CD41EEBD106 /* ExpoModulesProvider.swift */; };
 		BCB59C4D3E936045A1B4B743 /* libPods-defaults-NotificationService.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FDA952B83D7FF30D4E2CFFEE /* libPods-defaults-NotificationService.a */; };
+		CE2D2590CFE1E442EA0FFFC9 /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F03842F76119AD75469B2B /* ExpoModulesProvider.swift */; };
+		DB3488E895F8D4E6C6591B35 /* libPods-defaults-Chat Ntask.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F2D82744B0B5DEE814989FD /* libPods-defaults-Chat Ntask.a */; };
 		DD2BA30A89E64F189C2C24AC /* libWatermelonDB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA7E862283664608B3894E34 /* libWatermelonDB.a */; };
 /* End PBXBuildFile section */
 
@@ -267,7 +267,9 @@
 		1EFEB5A12493B67D0072EDC0 /* NotificationService.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NotificationService.entitlements; sourceTree = "<group>"; };
 		2436B5359F3FC65800BCA854 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-defaults-ShareChatNtask/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
 		248353F4DDFE40F4B2FCF3E3 /* Pods-defaults-ChatNtask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defaults-ChatNtask.debug.xcconfig"; path = "Target Support Files/Pods-defaults-ChatNtask/Pods-defaults-ChatNtask.debug.xcconfig"; sourceTree = "<group>"; };
-		391C4F7AA7023CD41EEBD106 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-defaults-Rocket.Chat/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
+		26F03842F76119AD75469B2B /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-defaults-Chat Ntask/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
+		3499141825C6E4B57E2BBFED /* Pods-defaults-Chat Ntask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defaults-Chat Ntask.debug.xcconfig"; path = "Target Support Files/Pods-defaults-Chat Ntask/Pods-defaults-Chat Ntask.debug.xcconfig"; sourceTree = "<group>"; };
+		41D5A7087F80261739B687AF /* Pods-defaults-Chat Ntask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defaults-Chat Ntask.release.xcconfig"; path = "Target Support Files/Pods-defaults-Chat Ntask/Pods-defaults-Chat Ntask.release.xcconfig"; sourceTree = "<group>"; };
 		60B2A6A31FC4588700BD58E5 /* RocketChatRN.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = RocketChatRN.entitlements; path = RocketChatRN/RocketChatRN.entitlements; sourceTree = "<group>"; };
 		6B89A0C56BF3A44505DEAF83 /* Pods-defaults-ShareRocketChatRN.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defaults-ShareRocketChatRN.debug.xcconfig"; path = "Target Support Files/Pods-defaults-ShareRocketChatRN/Pods-defaults-ShareRocketChatRN.debug.xcconfig"; sourceTree = "<group>"; };
 		6D314C5F2AD8F22300989311 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -285,6 +287,7 @@
 		7B761BFAFBCDE593C2BAA688 /* Pods-defaults-NotificationService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defaults-NotificationService.release.xcconfig"; path = "Target Support Files/Pods-defaults-NotificationService/Pods-defaults-NotificationService.release.xcconfig"; sourceTree = "<group>"; };
 		8CAEA4511906BB1E01898414 /* Pods-defaults-NotificationService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defaults-NotificationService.debug.xcconfig"; path = "Target Support Files/Pods-defaults-NotificationService/Pods-defaults-NotificationService.debug.xcconfig"; sourceTree = "<group>"; };
 		8CEAFE4A5A41534CA8650FD1 /* Pods-defaults-ChatNtask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defaults-ChatNtask.release.xcconfig"; path = "Target Support Files/Pods-defaults-ChatNtask/Pods-defaults-ChatNtask.release.xcconfig"; sourceTree = "<group>"; };
+		8F2D82744B0B5DEE814989FD /* libPods-defaults-Chat Ntask.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-defaults-Chat Ntask.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B37C79D9BD0742CE936B6982 /* libc++.tbd */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		B3938BB69AF977BA4D57CFCC /* Pods-defaults-ShareChatNtask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defaults-ShareChatNtask.debug.xcconfig"; path = "Target Support Files/Pods-defaults-ShareChatNtask/Pods-defaults-ShareChatNtask.debug.xcconfig"; sourceTree = "<group>"; };
 		B92B1B36491B6133C8BA006C /* Pods-defaults-ShareChatNtask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defaults-ShareChatNtask.release.xcconfig"; path = "Target Support Files/Pods-defaults-ShareChatNtask/Pods-defaults-ShareChatNtask.release.xcconfig"; sourceTree = "<group>"; };
@@ -293,7 +296,6 @@
 		D18A75D6B09FE66EF4BA01D5 /* Pods-defaults-ShareRocketChatRN.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defaults-ShareRocketChatRN.release.xcconfig"; path = "Target Support Files/Pods-defaults-ShareRocketChatRN/Pods-defaults-ShareRocketChatRN.release.xcconfig"; sourceTree = "<group>"; };
 		D71FBB48FEF190385BF70D2C /* Pods-defaults-Rocket.Chat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defaults-Rocket.Chat.debug.xcconfig"; path = "Target Support Files/Pods-defaults-Rocket.Chat/Pods-defaults-Rocket.Chat.debug.xcconfig"; sourceTree = "<group>"; };
 		DD34A9C7880B17A54E25088C /* Pods-defaults-RocketChatRN.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defaults-RocketChatRN.release.xcconfig"; path = "Target Support Files/Pods-defaults-RocketChatRN/Pods-defaults-RocketChatRN.release.xcconfig"; sourceTree = "<group>"; };
-		F4094FC013D693914C83D9F9 /* libPods-defaults-Rocket.Chat.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-defaults-Rocket.Chat.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9945804A009174B99EA898F /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-defaults-ChatNtask/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
 		FDA952B83D7FF30D4E2CFFEE /* libPods-defaults-NotificationService.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-defaults-NotificationService.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -354,7 +356,7 @@
 				7AAB3E3D257E6A6E00707CF6 /* JavaScriptCore.framework in Frameworks */,
 				7AAB3E3E257E6A6E00707CF6 /* libz.tbd in Frameworks */,
 				7AAB3E3F257E6A6E00707CF6 /* libWatermelonDB.a in Frameworks */,
-				9C6A2011983C0EB1E0BFDF8C /* libPods-defaults-Rocket.Chat.a in Frameworks */,
+				DB3488E895F8D4E6C6591B35 /* libPods-defaults-Chat Ntask.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,13 +492,21 @@
 			name = ChatNtask;
 			sourceTree = "<group>";
 		};
+		762F748240FFB225505BB70A /* Chat Ntask */ = {
+			isa = PBXGroup;
+			children = (
+				26F03842F76119AD75469B2B /* ExpoModulesProvider.swift */,
+			);
+			name = "Chat Ntask";
+			sourceTree = "<group>";
+		};
 		7890E71355E6C0A3288089E7 /* ExpoModulesProviders */ = {
 			isa = PBXGroup;
 			children = (
 				A19B6D9832C0496282053365 /* NotificationService */,
-				989BF9C58F3C91FDAA6C0452 /* Rocket.Chat */,
 				5CC4D5021657F8481C628830 /* ChatNtask */,
 				FF2BF2627CA1416E99D2BB0B /* ShareChatNtask */,
+				762F748240FFB225505BB70A /* Chat Ntask */,
 			);
 			name = ExpoModulesProviders;
 			sourceTree = "<group>";
@@ -516,6 +526,8 @@
 				8CEAFE4A5A41534CA8650FD1 /* Pods-defaults-ChatNtask.release.xcconfig */,
 				B3938BB69AF977BA4D57CFCC /* Pods-defaults-ShareChatNtask.debug.xcconfig */,
 				B92B1B36491B6133C8BA006C /* Pods-defaults-ShareChatNtask.release.xcconfig */,
+				3499141825C6E4B57E2BBFED /* Pods-defaults-Chat Ntask.debug.xcconfig */,
+				41D5A7087F80261739B687AF /* Pods-defaults-Chat Ntask.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -556,14 +568,6 @@
 				7AAB3E52257E6A6E00707CF6 /* Chat Ntask.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		989BF9C58F3C91FDAA6C0452 /* Rocket.Chat */ = {
-			isa = PBXGroup;
-			children = (
-				391C4F7AA7023CD41EEBD106 /* ExpoModulesProvider.swift */,
-			);
-			name = Rocket.Chat;
 			sourceTree = "<group>";
 		};
 		A19B6D9832C0496282053365 /* NotificationService */ = {
@@ -608,9 +612,9 @@
 				B37C79D9BD0742CE936B6982 /* libc++.tbd */,
 				06BB44DD4855498082A744AD /* libz.tbd */,
 				FDA952B83D7FF30D4E2CFFEE /* libPods-defaults-NotificationService.a */,
-				F4094FC013D693914C83D9F9 /* libPods-defaults-Rocket.Chat.a */,
 				7AB8C6DDA88EC8EDE313DDDB /* libPods-defaults-ChatNtask.a */,
 				0E899F80F62A55B52E0E8A1F /* libPods-defaults-ShareChatNtask.a */,
+				8F2D82744B0B5DEE814989FD /* libPods-defaults-Chat Ntask.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -929,7 +933,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-defaults-Rocket.Chat-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-defaults-Chat Ntask-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1165,7 +1169,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-defaults-Rocket.Chat/Pods-defaults-Rocket.Chat-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-defaults-Chat Ntask/Pods-defaults-Chat Ntask-frameworks.sh",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OpenSSL-Universal/OpenSSL.framework/OpenSSL",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/hermes-engine/hermes.framework/hermes",
 			);
@@ -1176,7 +1180,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-defaults-Rocket.Chat/Pods-defaults-Rocket.Chat-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-defaults-Chat Ntask/Pods-defaults-Chat Ntask-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BB580E163ADADB99974B9507 /* [CP] Copy Pods Resources */ = {
@@ -1185,7 +1189,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-defaults-Rocket.Chat/Pods-defaults-Rocket.Chat-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-defaults-Chat Ntask/Pods-defaults-Chat Ntask-resources.sh",
 				"${PODS_CONFIGURATION_BUILD_DIR}/RNImageCropPicker/QBImagePicker.bundle",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Entypo.ttf",
@@ -1232,7 +1236,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-defaults-Rocket.Chat/Pods-defaults-Rocket.Chat-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-defaults-Chat Ntask/Pods-defaults-Chat Ntask-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E5B15D44172706200C51E871 /* [CP] Copy Pods Resources */ = {
@@ -1461,7 +1465,7 @@
 				7AAB3E2F257E6A6E00707CF6 /* Message.swift in Sources */,
 				7AAB3E30257E6A6E00707CF6 /* NotificationType.swift in Sources */,
 				7AAB3E31257E6A6E00707CF6 /* SendMessage.swift in Sources */,
-				BC404914E86821389EEB543D /* ExpoModulesProvider.swift in Sources */,
+				CE2D2590CFE1E442EA0FFFC9 /* ExpoModulesProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1659,7 +1663,7 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/rn-extensions-share/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
-					$PODS_CONFIGURATION_BUILD_DIR/Firebase,
+					"$PODS_CONFIGURATION_BUILD_DIR/Firebase",
 				);
 				INFOPLIST_FILE = ShareRocketChatRN/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
@@ -1728,7 +1732,7 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/rn-extensions-share/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
-					$PODS_CONFIGURATION_BUILD_DIR/Firebase,
+					"$PODS_CONFIGURATION_BUILD_DIR/Firebase",
 				);
 				INFOPLIST_FILE = ShareRocketChatRN/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
@@ -1831,7 +1835,7 @@
 		};
 		7AAB3E50257E6A6E00707CF6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D71FBB48FEF190385BF70D2C /* Pods-defaults-Rocket.Chat.debug.xcconfig */;
+			baseConfigurationReference = 3499141825C6E4B57E2BBFED /* Pods-defaults-Chat Ntask.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				APPLICATION_EXTENSION_API_ONLY = NO;
@@ -1886,7 +1890,7 @@
 		};
 		7AAB3E51257E6A6E00707CF6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C7B49FFF390E777885466DB8 /* Pods-defaults-Rocket.Chat.release.xcconfig */;
+			baseConfigurationReference = 41D5A7087F80261739B687AF /* Pods-defaults-Chat Ntask.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				APPLICATION_EXTENSION_API_ONLY = NO;
