@@ -35,7 +35,7 @@ workflows:
           # Note that tracks can be specified when retrieving latest build number from Google Play, for example:
           # export NEW_BUILD_NUMBER=$(($(google-play get-latest-build-number --package-name "$PACKAGE_NAME" --tracks=alpha) + 1))
           export LATEST_GOOGLE_PLAY_BUILD_NUMBER=$(($(google-play get-latest-build-number --package-name "$PACKAGE_NAME") + 1))
-          cd android && ./gradlew experimentalPlayRelease
+          cd android && ./gradlew officialPlayRelease
     artifacts:
       - android/app/build/outputs/**/*.apk
       - android/app/build/outputs/**/*.aab
@@ -83,7 +83,8 @@ workflows:
 
       - name: Build Android release
         script: |
-          yarn run e2e:android-build-debug
+          export LATEST_GOOGLE_PLAY_BUILD_NUMBER=$(($(google-play get-latest-build-number --package-name "$PACKAGE_NAME") + 1))
+          cd android && ./gradlew experimentalPlayRelease
     artifacts:
       - android/app/build/outputs/**/*.apk
       - android/app/build/outputs/**/*.aab
@@ -95,8 +96,8 @@ workflows:
       groups:
         - appstore_credentials
       vars:
-        XCODE_WORKSPACE: 'ChatNtask.xcworkspace'
-        XCODE_SCHEME: 'Chat Ntask'
+        XCODE_WORKSPACE: 'RocketChatRN.xcworkspace'
+        XCODE_SCHEME: 'ChatNtask'
         BUNDLE_ID: 'chatntask.jmscarpa.com.br'
         APP_STORE_APP_ID: 6444013119
       node: 16.18.0
@@ -165,8 +166,8 @@ workflows:
       groups:
         - appstore_credentials
       vars:
-        XCODE_WORKSPACE: 'ChatNtask.xcworkspace'
-        XCODE_SCHEME: 'Chat Ntask'
+        XCODE_WORKSPACE: 'RocketChatRN.xcworkspace'
+        XCODE_SCHEME: 'ChatNtask'
         BUNDLE_ID: 'chatntask.jmscarpa.com.br'
         APP_STORE_APP_ID: 6444013119
       node: 16.18.0
