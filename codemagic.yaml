@@ -83,8 +83,7 @@ workflows:
 
       - name: Build Android release
         script: |
-          export LATEST_GOOGLE_PLAY_BUILD_NUMBER=$(($(google-play get-latest-build-number --package-name "$PACKAGE_NAME") + 1))
-          cd android && ./gradlew experimentalPlayRelease
+          yarn run e2e:android-build-debug
     artifacts:
       - android/app/build/outputs/**/*.apk
       - android/app/build/outputs/**/*.aab
@@ -209,7 +208,8 @@ workflows:
         script: |
           xcode-project use-profiles --warn-only
       - name: Build ipa for distribution
-        script: yarn run e2e:ios-build
+        script: |
+          xcode-project build-ipa --workspace "$FCI_BUILD_DIR/ios/$XCODE_WORKSPACE" --scheme "$XCODE_SCHEME"   --archive-flags="-destination 'generic/platform=iOS'"
     artifacts:
       - build/ios/ipa/*.ipa
       - /tmp/xcodebuild_logs/*.log
