@@ -38,7 +38,7 @@ module.exports = {
 			type: 'android.apk',
 			binaryPath: 'android/app/build/outputs/apk/experimentalPlay/release/app-experimental-play-release.apk',
 			build:
-				'cd android ; ./gradlew assembleExperimentalPlayRelease assembleExperimentalPlayReleaseAndroidTest -DtestBuildType=release ; cd -'
+				'cd android ; ./gradlew assembleExperimentalPlayRelease -DtestBuildType=release ; cd -'
 		}
 	},
 	devices: {
