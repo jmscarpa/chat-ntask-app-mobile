@@ -19,13 +19,13 @@ module.exports = {
 			type: 'ios.app',
 			binaryPath: 'ios/build/Build/Products/Debug-iphonesimulator/Rocket.Chat Experimental.app',
 			build:
-				'xcodebuild -workspace ios/RocketChatRN.xcworkspace -scheme RocketChatRN -configuration Debug -sdk iphonesimulator -derivedDataPath ios/build'
+				'xcodebuild -workspace ios/RocketChatRN.xcworkspace -scheme ChatNtask -configuration Debug -sdk iphonesimulator -derivedDataPath ios/build'
 		},
 		'ios.release': {
 			type: 'ios.app',
 			binaryPath: 'ios/build/Build/Products/Release-iphonesimulator/Rocket.Chat Experimental.app',
 			build:
-				'xcodebuild -workspace ios/RocketChatRN.xcworkspace -scheme RocketChatRN -configuration Release -sdk iphonesimulator -derivedDataPath ios/build'
+				'xcodebuild -workspace ios/RocketChatRN.xcworkspace -scheme ChatNtask -configuration Release -sdk iphonesimulator -derivedDataPath ios/build'
 		},
 		'android.debug': {
 			type: 'android.apk',
