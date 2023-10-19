@@ -99,7 +99,7 @@ workflows:
         XCODE_WORKSPACE: 'ChatNtask.xcworkspace'
         XCODE_SCHEME: 'Chat Ntask'
         BUNDLE_ID: 'chatntask.jmscarpa.com.br'
-        APP_STORE_APP_ID: 6444013119
+        APP_STORE_APP_ID: 6469017133
       node: 16.18.0
       xcode: 14.2
       cocoapods: default
@@ -134,7 +134,7 @@ workflows:
           set -e
           set -x
           cd $FCI_BUILD_DIR/ios
-          agvtool new-version -all $(($(app-store-connect get-latest-testflight-build-number "$APP_STORE_APP_ID") + 1))
+          agvtool new-version -all $(($(app-store-connect get-latest-testflight-build-number "$APP_STORE_APP_ID") + 1)6469017133)
       - name: Set up code signing settings on Xcode project
         script: |
           xcode-project use-profiles --warn-only
@@ -172,7 +172,7 @@ workflows:
         XCODE_WORKSPACE: 'ChatNtask.xcworkspace'
         XCODE_SCHEME: 'Chat Ntask'
         BUNDLE_ID: 'chatntask.jmscarpa.com.br'
-        APP_STORE_APP_ID: 6444013119
+        APP_STORE_APP_ID: 6469017133
       node: 16.18.0
       xcode: 14.2
       cocoapods: default
