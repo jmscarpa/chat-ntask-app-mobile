@@ -96,8 +96,8 @@ workflows:
       groups:
         - appstore_credentials
       vars:
-        XCODE_WORKSPACE: 'RocketChatRN.xcworkspace'
-        XCODE_SCHEME: 'RocketChat'
+        XCODE_WORKSPACE: 'ChatNtask.xcworkspace'
+        XCODE_SCHEME: 'ChatNtask'
         BUNDLE_ID: 'chatntask.jmscarpa.com.br'
         APP_STORE_APP_ID: 6444013119
       node: 16.18.0
@@ -138,6 +138,9 @@ workflows:
       - name: Set up code signing settings on Xcode project
         script: |
           xcode-project use-profiles --warn-only
+      - name: list available schemes
+        script: |
+          xcode-project list-schemes --workspace "$FCI_BUILD_DIR/ios/$XCODE_WORKSPACE"
       - name: Build ipa for distribution
         script: |
           xcode-project build-ipa --workspace "$FCI_BUILD_DIR/ios/$XCODE_WORKSPACE" --scheme "$XCODE_SCHEME"
@@ -149,7 +152,7 @@ workflows:
     publishing:
       email:
         recipients:
-          - joao.scarpa@designa.com.br
+          - joao.scarpa@gmail.com
         notify:
           success: true
           failure: false
@@ -166,8 +169,8 @@ workflows:
       groups:
         - appstore_credentials
       vars:
-        XCODE_WORKSPACE: 'RocketChatRN.xcworkspace'
-        XCODE_SCHEME: 'RocketChat'
+        XCODE_WORKSPACE: 'ChatNtask.xcworkspace'
+        XCODE_SCHEME: 'ChatNtask'
         BUNDLE_ID: 'chatntask.jmscarpa.com.br'
         APP_STORE_APP_ID: 6444013119
       node: 16.18.0
@@ -208,6 +211,9 @@ workflows:
       - name: Set up code signing settings on Xcode project
         script: |
           xcode-project use-profiles --warn-only
+      - name: list available schemes
+        script: |
+          xcode-project list-schemes --workspace "$FCI_BUILD_DIR/ios/$XCODE_WORKSPACE"
       - name: Build ipa for distribution
         script: |
           xcode-project build-ipa --workspace "$FCI_BUILD_DIR/ios/$XCODE_WORKSPACE" --scheme "$XCODE_SCHEME"   --archive-flags="-destination 'generic/platform=iOS'"
