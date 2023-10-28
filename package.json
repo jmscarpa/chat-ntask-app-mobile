@@ -12,7 +12,7 @@
 		"ios": "npx react-native run-ios",
 		"android": "npx react-native run-android --variant=experimentalPlayDebug",
 		"android-release": "npx react-native run-android --variant=release",
-		"android-whitelabel": "npx react-native run-android --main-activity chat.rocket.reactnative.MainActivity --variant=experimentalPlayDebug --appId chatntask.jmscarpa.com.br",
+		"android-whitelabel": "npx react-native run-android --main-activity chat.rocket.reactnative.MainActivity --variant=experimentalPlayDebug --appId app.ntask.chat",
 		"log-android": "react-native log-android",
 		"snyk-protect": "snyk protect",
 		"precommit": "lint-staged",

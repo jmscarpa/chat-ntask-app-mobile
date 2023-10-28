@@ -8,17 +8,8 @@ workflows:
         - keystore_credentials
         - playstore_credentials
       vars:
-        PACKAGE_NAME: 'chatntask.jmscarpa.com.br'
+        PACKAGE_NAME: 'app.ntask.chat'
       node: 16.18.0
-    triggering:
-      events:
-        - push
-        - tag
-        - pull_request
-      branch_patterns:
-        - pattern: develop
-          include: true
-          source: true
     scripts:
       - name: Install yarn dependencies
         script: |
@@ -42,12 +33,11 @@ workflows:
     publishing:
       email:
         recipients:
-          - joao.scarpa@designa.com.br
+          - joao.scarpa@gmail.com
         notify:
           success: true
           failure: true
       google_play:
-        # See the following link for information regarding publishing to Google Play - https://docs.codemagic.io/publishing-yaml/distribution/#google-play
         credentials: $GCLOUD_SERVICE_ACCOUNT_CREDENTIALS
         track: internal
   android-apk:
@@ -59,7 +49,7 @@ workflows:
         - keystore_credentials
         - playstore_credentials
       vars:
-        PACKAGE_NAME: 'chatntask.jmscarpa.com.br'
+        PACKAGE_NAME: 'app.ntask.chat'
       node: 16.18.0
     triggering:
       events:
@@ -171,7 +161,7 @@ workflows:
       vars:
         XCODE_WORKSPACE: 'ChatNtask.xcworkspace'
         XCODE_SCHEME: 'Chat Ntask'
-        BUNDLE_ID: 'chatntask.jmscarpa.com.br'
+        BUNDLE_ID: 'app.ntask.chat'
         APP_STORE_APP_ID: 6469017133
       node: 16.18.0
       xcode: 15
