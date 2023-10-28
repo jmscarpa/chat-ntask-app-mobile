@@ -30,16 +30,6 @@ workflows:
     artifacts:
       - android/app/build/outputs/**/*.apk
       - android/app/build/outputs/**/*.aab
-    publishing:
-      email:
-        recipients:
-          - joao.scarpa@gmail.com
-        notify:
-          success: true
-          failure: true
-      google_play:
-        credentials: $GCLOUD_SERVICE_ACCOUNT_CREDENTIALS
-        track: internal
   android-apk:
     name: React Native Android - Dev
     max_build_duration: 120
