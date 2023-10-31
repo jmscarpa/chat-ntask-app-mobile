@@ -7,7 +7,6 @@ workflows:
       groups:
         - keystore_credentials
         - playstore_credentials
-        - android_signing
       vars:
         PACKAGE_NAME: 'app.ntask.chat'
       node: 16.18.0
