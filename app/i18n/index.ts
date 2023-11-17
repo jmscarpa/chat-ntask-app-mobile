@@ -1,6 +1,5 @@
 import i18n from 'i18n-js';
 import { I18nManager } from 'react-native';
-import * as RNLocalize from 'react-native-localize';
 import moment from 'moment';
 import 'moment/min/locales';
 
@@ -139,14 +138,11 @@ export const setLanguage = (l: string) => {
 };
 
 i18n.translations = { en: translations.en?.() };
-const defaultLanguage = { languageTag: 'en', isRTL: false };
-const availableLanguages = Object.keys(translations);
-const { languageTag } = RNLocalize.findBestAvailableLanguage(availableLanguages) || defaultLanguage;
 
 // @ts-ignore
 i18n.isTranslated = (text?: string) => text in englishJson;
 
-setLanguage(languageTag);
+setLanguage('pt-BR');
 i18n.fallbacks = true;
 
 type Ti18n = {

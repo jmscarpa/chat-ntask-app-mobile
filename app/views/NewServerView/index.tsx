@@ -1,8 +1,7 @@
 import { Q } from '@nozbe/watermelondb';
 import { Base64 } from 'js-base64';
 import React from 'react';
-import { BackHandler, Image, Keyboard, StyleSheet, Text, View } from 'react-native';
-import { TouchableOpacity } from 'react-native-gesture-handler';
+import { BackHandler, Image, Keyboard, StyleSheet, Text } from 'react-native';
 import { connect } from 'react-redux';
 import parse from 'url-parse';
 
@@ -43,18 +42,7 @@ const styles = StyleSheet.create({
 		alignSelf: 'center'
 	},
 	subtitle: {
-		...sharedStyles.textRegular,
-		alignSelf: 'center'
-	},
-	certificatePicker: {
-		alignItems: 'center',
-		justifyContent: 'flex-end'
-	},
-	chooseCertificateTitle: {
 		...sharedStyles.textRegular
-	},
-	chooseCertificate: {
-		...sharedStyles.textSemibold
 	},
 	description: {
 		...sharedStyles.textRegular,
@@ -291,44 +279,15 @@ class NewServerView extends React.Component<INewServerViewProps, INewServerViewS
 		}
 	};
 
-	renderCertificatePicker = () => {
-		const { certificate } = this.state;
-		const { theme, width, height, previousServer } = this.props;
-		return (
-			<View
-				style={[
-					styles.certificatePicker,
-					{
-						marginBottom: verticalScale({ size: previousServer && !isTablet ? 10 : 30, height })
-					}
-				]}
-			>
-				<Text
-					style={[
-						styles.chooseCertificateTitle,
-						{ color: themes[theme].auxiliaryText, fontSize: moderateScale({ size: 13, width }) }
-					]}
-				>
-					{certificate ? I18n.t('Your_certificate') : I18n.t('Do_you_have_a_certificate')}
-				</Text>
-				<TouchableOpacity
-					onPress={certificate ? this.handleRemove : this.chooseCertificate}
-					testID='new-server-choose-certificate'
-				>
-					<Text
-						style={[styles.chooseCertificate, { color: themes[theme].tintColor, fontSize: moderateScale({ size: 13, width }) }]}
-					>
-						{certificate ?? I18n.t('Apply_Your_Certificate')}
-					</Text>
-				</TouchableOpacity>
-			</View>
-		);
-	};
-
 	render() {
 		const { connecting, theme, previousServer, width, height } = this.props;
 		const { text, connectingOpen, serversHistory } = this.state;
 		const marginTop = previousServer ? 0 : 35;
+    
+		// if text is empty, set default value to chat.ntask.app
+		if (text === '') {
+			this.setState({ text: 'https://chat.ntask.app' });
+		}
 
 		return (
 			<FormContainer testID='new-server-view' keyboardShouldPersistTaps='never'>
@@ -356,7 +315,7 @@ class NewServerView extends React.Component<INewServerViewProps, INewServerViewS
 							}
 						]}
 					>
-						Rocket.Chat
+						Chat Ntask
 					</Text>
 					<Text
 						style={[
@@ -364,11 +323,12 @@ class NewServerView extends React.Component<INewServerViewProps, INewServerViewS
 							{
 								color: themes[theme].controlText,
 								fontSize: moderateScale({ size: 16, width }),
-								marginBottom: verticalScale({ size: 30, height })
+								marginBottom: verticalScale({ size: 30, height }),
+								textAlign: 'center'
 							}
 						]}
 					>
-						{I18n.t('Onboarding_subtitle')}
+						Sua solução para comunicação e gestão de tarefas
 					</Text>
 					<ServerInput
 						text={text}
@@ -380,7 +340,7 @@ class NewServerView extends React.Component<INewServerViewProps, INewServerViewS
 						onPressServerHistory={this.onPressServerHistory}
 					/>
 					<Button
-						title={I18n.t('Connect')}
+						title='Entrar'
 						type='primary'
 						onPress={this.submit}
 						disabled={!text || connecting}
@@ -415,7 +375,6 @@ class NewServerView extends React.Component<INewServerViewProps, INewServerViewS
 						</>
 					) : null}
 				</FormContainerInner>
-				{this.renderCertificatePicker()}
 			</FormContainer>
 		);
 	}

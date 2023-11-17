@@ -14,11 +14,10 @@ import { getShowLoginButton } from '../../selectors/login';
 import ServerAvatar from './ServerAvatar';
 import styles from './styles';
 import { useAppSelector } from '../../lib/hooks';
-import RegisterDisabledComponent from './RegisterDisabledComponent';
 
 type TNavigation = CompositeNavigationProp<
-	StackNavigationProp<OutsideParamList, 'WorkspaceView'>,
-	StackNavigationProp<OutsideModalParamList>
+StackNavigationProp<OutsideParamList, 'WorkspaceView'>,
+StackNavigationProp<OutsideModalParamList>
 >;
 
 const useWorkspaceViewSelector = () =>
@@ -89,9 +88,7 @@ const WorkspaceView = () => {
 						onPress={register}
 						testID='workspace-view-register'
 					/>
-				) : (
-					<RegisterDisabledComponent />
-				)}
+				) : null}
 			</FormContainerInner>
 		</FormContainer>
 	);

@@ -14,7 +14,6 @@ import I18n from '../../i18n';
 import { OutsideParamList } from '../../stacks/types';
 import { useTheme } from '../../theme';
 import sharedStyles from '../Styles';
-import UGCRules from '../../containers/UserGeneratedContentRules';
 import { useAppSelector } from '../../lib/hooks';
 import styles from './styles';
 
@@ -49,7 +48,6 @@ const UserForm = () => {
 		Accounts_EmailOrUsernamePlaceholder,
 		Accounts_PasswordPlaceholder,
 		Accounts_PasswordReset,
-		Accounts_RegistrationForm_LinkReplacementText,
 		isFetching,
 		Accounts_RegistrationForm,
 		Site_Name,
@@ -158,12 +156,8 @@ const UserForm = () => {
 						{I18n.t('Create_account')}
 					</Text>
 				</View>
-			) : (
-				<Text style={[styles.registerDisabled, { color: colors.auxiliaryText }]}>
-					{Accounts_RegistrationForm_LinkReplacementText}
-				</Text>
-			)}
-			<UGCRules styleContainer={styles.ugcContainer} />
+			) : null }
+			{/* <UGCRules styleContainer={styles.ugcContainer} /> */}
 		</>
 	);
 };
