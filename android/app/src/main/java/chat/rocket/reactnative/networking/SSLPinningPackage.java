@@ -1,4 +1,4 @@
-package chat.rocket.reactnative.networking;
+package app.ntask.chat.networking;
 
 import java.util.Arrays;
 import java.util.Collections;

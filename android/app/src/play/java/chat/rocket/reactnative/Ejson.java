@@ -1,4 +1,4 @@
-package chat.rocket.reactnative;
+package app.ntask.chat;
 
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.Callback;

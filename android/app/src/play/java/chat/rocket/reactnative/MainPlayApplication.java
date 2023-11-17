@@ -1,4 +1,4 @@
-package chat.rocket.reactnative;
+package app.ntask.chat;
 
 import android.content.Context;
 import android.os.Bundle;

@@ -1,4 +1,4 @@
-package chat.rocket.reactnative.share;
+package app.ntask.chat.share;
 
 import com.facebook.react.ReactActivity;
 

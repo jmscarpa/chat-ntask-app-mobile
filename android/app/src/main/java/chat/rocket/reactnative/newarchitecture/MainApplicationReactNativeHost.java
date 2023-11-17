@@ -1,4 +1,4 @@
-package chat.rocket.reactnative.newarchitecture;
+package app.ntask.chat.newarchitecture;
 
 import android.app.Application;
 import androidx.annotation.NonNull;
@@ -19,9 +19,9 @@ import com.facebook.react.fabric.CoreComponentsRegistry;
 import com.facebook.react.fabric.EmptyReactNativeConfig;
 import com.facebook.react.fabric.FabricJSIModuleProvider;
 import com.facebook.react.uimanager.ViewManagerRegistry;
-import chat.rocket.reactnative.BuildConfig;
-import chat.rocket.reactnative.newarchitecture.components.MainComponentsRegistry;
-import chat.rocket.reactnative.newarchitecture.modules.MainApplicationTurboModuleManagerDelegate;
+import app.ntask.chat.BuildConfig;
+import app.ntask.chat.newarchitecture.components.MainComponentsRegistry;
+import app.ntask.chat.newarchitecture.modules.MainApplicationTurboModuleManagerDelegate;
 import java.util.ArrayList;
 import java.util.List;
 

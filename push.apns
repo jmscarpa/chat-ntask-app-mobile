@@ -1,5 +1,5 @@
 {
-	"Simulator Target Bundle": "chat.rocket.reactnative",
+	"Simulator Target Bundle": "app.ntask.chat",
 	"aps": {
 		"alert": {
 			"title": "Hey!",

@@ -1,6 +1,6 @@
-package chat.rocket.reactnative.share;
+package app.ntask.chat.share;
 
-import chat.rocket.reactnative.BuildConfig;
+import app.ntask.chat.BuildConfig;
 
 import chat.rocket.SharePackage;
 
